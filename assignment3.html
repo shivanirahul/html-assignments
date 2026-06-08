@@ -2,6 +2,22 @@
 <html>
 <head>
     <title>Layout 2</title>
+    <style>
+        .search-box {
+            width: 100%;
+        }
+        .profile-box {
+            width: 55px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .icon-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <table border="1" width="900" height="600" align="center" cellspacing="0">
@@ -15,7 +31,7 @@
             <table width="100%">
                 <tr>
                     <td width="80%">
-                        <input type="text" style="width:100%;">
+                        <input type="text" class="search-box">
                     </td>
                     <td align="center">
                         <button><b>Search</b></button>
@@ -27,28 +43,25 @@
             <table width="100%">
                 <tr>
                     <td rowspan="2" width="70">
-                        <div style="width:55px;height:50px;border:1px solid black;"></div>
+                        <div class="profile-box"></div>
                     </td>
                     <td>
                         <b>Welcome<br>Mr. Carlson</b>
                     </td>
                 </tr>
-
                 <tr>
                     <td>
-                        <div style="display:inline-block;width:20px;height:20px;border:1px solid black;"></div>
-                        <div style="display:inline-block;width:20px;height:20px;border:1px solid black;"></div>
+                        <div class="icon-box"></div>
+                        <div class="icon-box"></div>
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
-   
     <tr height="430">
         <td width="150"></td>
         <td colspan="2"></td>
     </tr>
-
     <tr height="40">
         <td colspan="2">
             <b>@Zerone Consulting 2022</b>
@@ -62,6 +75,5 @@
         </td>
     </tr>
 </table>
-
 </body>
 </html>
